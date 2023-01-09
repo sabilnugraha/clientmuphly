@@ -1,38 +1,477 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap");
+
 .App {
-  text-align: center;
+  background-color: #e8e8e8;
+  height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar {
+  position: relative;
+  
+  width : 50px;
+  margin-left: 2%;
+  height: 80vh;
+  border-radius: 5px;
+  background: #e8e8e8;
+  box-shadow:  6px 6px 12px #c5c5c5,
+-6px -6px 12px #ffffff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.menubar {
+  position: relative;
+  /* display: flex;
+  justify-content: space-between; */
+  display: none;
+  width : 50px;
+  margin-left: 2%;
+  height: 270px;
+  border-radius: 5px;
+  background: #e8e8e8;
+  box-shadow:  6px 6px 12px #c5c5c5,
+-6px -6px 12px #ffffff;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.menubarActive {
+  position: relative;
+  
+  width : 50px;
+  margin-left: 2%;
+  height: 270px;
+  border-radius: 5px;
+  background: #e8e8e8;
+  box-shadow:  6px 6px 12px #c5c5c5,
+-6px -6px 12px #ffffff;
+  
+}
+
+.menubarActiveTrans {
+  position: relative;
+  
+  width : 50px;
+  margin-left: 2%;
+  border-radius: 15px;
+  background: #e8e8e8;
+  box-shadow:  6px 6px 12px #c5c5c5,
+-6px -6px 12px #ffffff;
+  
+}
+
+.menubarActiveDebtCredit {
+  position: relative;
+  
+  width : 100%;
+  margin-left: 2%;
+  height: 280px;
+  border-radius: 25px;
+  background: #e8e8e8;
+  box-shadow:  6px 6px 12px #c5c5c5,
+-6px -6px 12px #ffffff;
+  
+}
+
+.menubarActiveDebt {
+  position: relative;
+  
+  width : 100%;
+  margin-left: 2%;
+  height: 280px;
+  border-radius: 25px;
+  background: #e8e8e8;
+  box-shadow:  6px 6px 12px #c5c5c5,
+-6px -6px 12px #ffffff;
+  
+}
+
+.menubarNonActiveDebtCredit {
+  position: relative;
+ display: none; 
+  width : 100%;
+  margin-left: 2%;
+  height: 210pxpx;
+  border-radius: 25px;
+  background: #e8e8e8;
+  box-shadow:  6px 6px 12px #c5c5c5,
+-6px -6px 12px #ffffff;
+  
+}
+
+.menubarNonActiveDebt {
+  position: relative;
+ display: none; 
+  width : 100%;
+  margin-left: 2%;
+  height: 210pxpx;
+  border-radius: 25px;
+  background: #e8e8e8;
+  box-shadow:  6px 6px 12px #c5c5c5,
+-6px -6px 12px #ffffff;
+  
+}
+
+.flexBox {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  width : 100%;
 }
 
-.App-link {
-  color: #61dafb;
+.barMenu {
+  display: flex;
+  justify-content: space-between;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.homeMenu {
+  position: relative;
+  width: 50%;
+  margin: auto;
+  
+}
+
+.homeMenuTrans {
+  position: relative;
+  width: 100%;
+  margin: auto;
+  
+}
+
+.menuIcon {
+  
+  object-fit: contain; /* atau cover atau fill */
+  width: 80%;
+  height: 80%;
+  
+  
+}
+
+.menuIconSub {
+  
+  object-fit: contain; /* atau cover atau fill */
+  width: 100%;
+  height: 100%;
+  
+  
+}
+
+.menuIconSubActive {
+  
+  object-fit: contain; /* atau cover atau fill */
+  width: 80%;
+  height: 80%;
+  
+  
+}
+
+.menuIconSub {
+  
+  object-fit: contain; /* atau cover atau fill */
+  width: 100%;
+  height: 100%;
+  
+  
+}
+
+.menuIconActive {
+  
+  object-fit: contain; /* atau cover atau fill */
+  width: 70%;
+  height: 70%;
+  
+  
+}
+
+.textMenu {
+font-size: 50%;
+text-align: center;
+top : 50%;
+
+
+color: #8e8e8e;
+}
+
+.textMenuTrans {
+  font-size: 100%;
+  text-align: center;
+  top: 50%;
+  transform: translateY(40%);
+  
+  
+  
+  color: #8e8e8e;
   }
-  to {
-    transform: rotate(360deg);
+.textMenuSub {
+  font-size: 70%;
+  text-align: center;
+  top : 50%;
+  
+  
+  color: #8e8e8e;
   }
+
+.headerText {
+  position: relative;
+  margin: auto;
+  font-size: 100%;
+  text-shadow: 
+   -8px -8px 12px rgba(255,255,255,0.4),
+   8px 8px 12px rgba(0,0,0,0.08);
+   caret-color:#262626;
+   outline: none;
+  text-align: center;
+  color: #868585;
+  top: 25%;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  
+}
+.active {
+  
+  position: relative;
+  border-radius: 5px;
+  width: 80%;
+  padding-bottom: 5%;
+  margin: auto;
+  
+  
+  box-shadow:
+    
+    4px 4px 4px 0px #d1d9e6 inset,
+    -4px -4px 4px 0px #ffffff inset;
+}
+
+.activeFull {
+  
+  position: relative;
+  border-radius: 5px;
+  width: 43px;
+  height: 43px;
+  padding-bottom: 5%;
+  margin: auto;
+  margin-top: 8px;
+  
+  box-shadow:
+    
+    4px 4px 4px 0px #d1d9e6 inset,
+    -4px -4px 4px 0px #ffffff inset;
+}
+
+.nonActiveFull {
+  
+  position: relative;
+  border-radius: 5px;
+  width: 43px;
+  height: 43px;
+  padding-bottom: 5%;
+  margin: auto;
+  margin-top: 8px;
+  background: #e8e8e8;
+  box-shadow:  6px 6px 12px #c5c5c5,
+-6px -6px 12px #ffffff;
+  
+}
+
+.activeTrans {
+  
+  position: relative;
+  border-radius: 15px;
+  width: 75px;
+  height: 43px;
+  padding-bottom: 5%;
+  margin: auto;
+  
+  
+  box-shadow:
+    
+    4px 4px 4px 0px #d1d9e6 inset,
+    -4px -4px 4px 0px #ffffff inset;
+}
+
+.nonActiveTrans {
+  
+  position: relative;
+  border-radius: 15px;
+  width: 75px;
+  height: 43px;
+  padding-bottom: 5%;
+  margin: auto;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  background: #e8e8e8;
+  box-shadow:  6px 6px 12px #c5c5c5,
+-6px -6px 12px #ffffff;
+  
+}
+
+.nonActive {
+  position: relative;
+  border-radius: 5px;
+  width: 80%;
+  padding-bottom: 5%;
+  margin: auto;
+  
+}
+
+.topBar {
+  position: relative;
+  width : 100%;
+  margin-left: 2%;
+  height: 50px;
+  border-radius: 5px;
+  background: #e8e8e8;
+  box-shadow:  6px 6px 12px #c5c5c5,
+-6px -6px 12px #ffffff;
+}
+
+
+
+.Bar {
+  
+  position: relative;
+  width : 100%;
+  margin-left: 2%;
+  height: auto;
+  border-radius: 5px;
+  background: #e8e8e8;
+  box-shadow:  6px 6px 12px #c5c5c5,
+-6px -6px 12px #ffffff;}
+
+.subBar {
+  
+  position: relative;
+  width : 100%;
+  margin-left: 2%;
+  height: auto;
+  border-radius: 5px;
+  background: #e8e8e8;
+  box-shadow:  6px 6px 12px #c5c5c5,
+-6px -6px 12px #ffffff;}
+
+.menuText {
+  position: relative;
+  margin: auto;
+  font-size: 50%;
+  top: 40%;
+  text-shadow: 
+   -8px -8px 12px rgba(255,255,255,0.4),
+   8px 8px 12px rgba(0,0,0,0.08);
+   caret-color:#262626;
+   outline: none;
+  text-align: center;
+  color: #868585;
+  
+  font-family: "Poppins", sans-serif;
+  
+}
+
+.topBarActive {
+  position: relative;
+  width : 100%;
+  margin-left: 2%;
+  height: 10vh;
+  border-radius: 5px;
+  background: #e8e8e8;
+  box-shadow:  4px 4px 4px 0px #d1d9e6 inset,
+  -4px -4px 4px 0px #ffffff inset;
+}
+
+.nonActiveDebtCredit {
+  
+  position: relative;
+  
+  width: 43px;
+  height: 43px;
+  padding-bottom: 5%;
+  margin: auto;
+  margin-top: 8px;
+  background: #e8e8e8;
+  box-shadow:  6px 6px 12px #c5c5c5,
+-6px -6px 12px #ffffff;
+  
+}
+
+.menuTextDebt {
+  position: relative;
+  margin: auto;
+  width: 100%;
+  font-size: 50%;
+  text-shadow: 
+   -8px -8px 12px rgba(255,255,255,0.4),
+   8px 8px 12px rgba(0,0,0,0.08);
+   caret-color:#262626;
+   outline: none;
+  text-align: center;
+  color: #868585;
+  
+  font-family: "Poppins", sans-serif;
+  
+}
+
+.roundMenu {
+  width: 25%;
+}
+
+.menuIconRound {
+  
+  position: relative;
+  object-fit: contain; /* atau cover atau fill */
+  width: 45px;
+  height: 45px;
+  border: 1px solid #ffffff;
+  margin: auto;
+  
+  
+  
+}
+
+.mainPage {
+  width: max-content;
+  border-radius: 10px;
+  background: #e8e8e8;
+  box-shadow:  4px 4px 4px 0px #d1d9e6 inset,
+  -4px -4px 4px 0px #ffffff inset;
+}
+
+.tableValue {
+  font-family: "Poppins", sans-serif;
+  color: #868585;
+}
+
+.subMainPage {
+  background: #e8e8e8;
+  box-shadow:  6px 6px 12px #c5c5c5,
+-6px -6px 12px #ffffff; 
+border-radius: 10px;
+}
+
+.glass {
+
+background: rgba(255, 255, 255, 0.57);
+border-radius: 10px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.headerMenu {
+  position: relative;
+  width : 95%;
+  height: 10vh;
+  margin: auto;
+  margin-top: 10px;
+  border-radius: 5px;
+  background: #e8e8e8;
+  box-shadow:  4px 4px 4px 0px #d1d9e6 inset,
+  -4px -4px 4px 0px #ffffff inset; 
+  text-align: center;
+  
+}
+
+.textHeader {
+  position: relative;
+  top: 25%;
+  text-align: center;
+font-size: 18px;
+font-weight: bold;
+color: #ffffff;
+
 }

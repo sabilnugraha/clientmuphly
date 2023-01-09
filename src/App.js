@@ -1,25 +1,28 @@
 import logo from './logo.svg';
 import './App.css';
+import { Table } from 'react-bootstrap';
+import { API } from './config/api';
+import { useEffect, useState } from 'react';
+import "bootstrap/dist/css/bootstrap.min.css";
+import { Button } from 'bootstrap';
+import { Route, Routes, Link } from "react-router-dom";
+import LandingPages from './pages/service/Service';
+import Client from './pages/client/Client';
 
 function App() {
-  return (
+  return(
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <Routes>
+      
+      <Route path="/portal" element={<LandingPages />} />
+      <Route path="/student" element={<Client />} />
+      
+    
+    </Routes>
+
     </div>
-  );
+  )
+  
 }
 
 export default App;
