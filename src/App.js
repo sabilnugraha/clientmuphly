@@ -8,6 +8,11 @@ import { Button } from 'bootstrap';
 import { Route, Routes, Link } from "react-router-dom";
 import LandingPages from './pages/service/Service';
 import Client from './pages/client/Client';
+import Student from './pages/landingpages/LandingPages';
+import StudentService from './pages/student/Student';
+import AddStudent from './pages/student/AddStudent.js';
+import Form from './pages/student/testpage';
+
 
 function App() {
   return(
@@ -15,8 +20,10 @@ function App() {
     <Routes>
       
       <Route path="/portal" element={<LandingPages />} />
-      <Route path="/student" element={<Client />} />
-      
+      <Route path="/student" element={<Student />} />
+      <Route path="/student/:id" element={<StudentService />} />
+      <Route path="/addstudents" element={<AddStudent />} />
+      <Route path="/test" element={<Form />} />
     
     </Routes>
 
